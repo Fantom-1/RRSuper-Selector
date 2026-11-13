@@ -1,0 +1,26 @@
+# Data: keep challenge data local until redistribution permission is confirmed
+data/raw/
+data/interim/
+data/processed/
+*.csv
+*.parquet
+*.feather
+*.xlsx
+*.xls
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+
+# Experiment outputs / local artefacts
+models/
+outputs/
+reports/generated/
+*.log
+.DS_Store
