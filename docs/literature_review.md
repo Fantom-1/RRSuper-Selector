@@ -116,3 +116,60 @@ This is a working evidence map, not an exhaustive systematic review. Papers are 
 - Treat a high-pressure strike rate or economy rate as a complete player rating.
 - Train an opaque model and then explain its output with post-hoc feature importance alone.
 - claim psychological composure from ball-by-ball outcomes.
+
+
+## E. Additional high-priority 2025–2026 research
+
+### 15. Impact ranking methodologies in limited-overs cricket: A systematic review of performance metrics (2025)
+- DOI: https://doi.org/10.1177/17479541251321477
+- Link: https://journals.sagepub.com/doi/abs/10.1177/17479541251321477
+- Why it matters: Reviews recent player-impact ranking approaches across batting, bowling and fielding, and critiques the limitations of traditional runs/wickets/averages.
+- Use here: Use as a comparison map for ranking families and their assumptions.
+
+### 16. Applications of higher order Markov models and Pressure Index to strategize controlled run chases in Twenty20 cricket (2026)
+- Authors: Rhitankar Bandyopadhyay, Dibyojyoti Bhattacharjee.
+- DOI: https://doi.org/10.1177/17479541261430809
+- Link: https://journals.sagepub.com/doi/10.1177/17479541261430809
+- Why it matters: Uses ball-by-ball second-innings states, Pressure Index and higher-order Markov chains over 6,537 T20 matches; the abstract reports open-source data availability through ESPNcricinfo and Cricsheet.
+- Use here: Recent T20-specific comparator for pressure trajectories and state transitions. Evaluate whether its pressure-index range and assumptions transfer to our data. It is a chase-strategy paper, not a complete batter/bowler ranking method.
+
+### 17. Modeling the joint influence of key factors on score contribution and ball utilization in limited-overs cricket for ranking player and team batting performance (2026)
+- DOI: https://doi.org/10.1177/17479541261451123
+- Link: https://journals.sagepub.com/doi/10.1177/17479541261451123
+- Why it matters: Uses a joint beta mixed-effects model to represent the relationship between score contribution and ball utilization, including batting position and experience.
+- Use here: A useful reminder that runs and ball usage are related outcomes and should not be blindly combined as independent weighted features. It is batting-focused and does not directly solve pressure-adjusted bowling rankings.
+
+### 18. A win-based measure of player productivity in cricket: evidence from the Women's Big Bash League between 2016/17 and 2025/26 (2026)
+- Author: Sarthak Mondal.
+- DOI: https://doi.org/10.1080/23750472.2026.2747309
+- Link: https://www.tandfonline.com/doi/full/10.1080/23750472.2026.2747309
+- Why it matters: Proposes Cricket Win Score (CWS), a role-aware decomposition linking batting and bowling productivity to team winning percentage. The paper reports WBBL-only validation across ten seasons and compares with realised wins, Pythagorean expected wins and cricWAR.
+- Reported results: Abstract reports team-level correlation 0.852 and player-level Spearman rank correlations 0.912 for batters and 0.973 for bowlers against cricWAR. These are the authors' reported results, not results independently reproduced by this project.
+- Use here: A key contemporary benchmark. Read the full equations and limitations before implementing. It is not a pressure-specific metric, and the WBBL-only evidence does not establish validity for men's IPL or our challenge dataset.
+
+### 19. Match analysis trends in limited-overs professional cricket: A systematic review of technical and tactical performance (2026)
+- DOI: https://doi.org/10.1177/17479541261439184
+- Link: https://journals.sagepub.com/doi/10.1177/17479541261439184
+- Why it matters: PRISMA review of 47 studies from 2007–2024. It describes the shift from static aggregates toward contextual indicators including pressure, phases, match-ups, game state and win probability, while identifying limitations in research-practice integration.
+- Use here: Anchor our justification for combining technical and tactical measures and translating them into coach-facing outputs.
+
+## F. Professional practice references (not peer-reviewed research)
+
+These are practitioner interviews and industry accounts. They inform workflow design, not statistical validity.
+
+- **Mumbai Indians team analyst L. Varun (2023):** https://www.mumbaiindians.com/news/l-varun-team-analyst-mi-have-been-trendsetters-in-how-data-is-consumed-by-coaches-and-players — describes year-round scouting support, player tracking, auction analysis, and pre-game / in-game / post-game workflows. Emphasises contextual, visual delivery to coaches and players.
+- **ASPA: Inside Professional Cricket Analysis (7 October 2026):** https://theaspa.org/news-%26-articles/f/ask-the-analyst-inside-professional-cricket-analysis?blogcategory=Articles — Hampshire analyst Tom Merrill discusses opposition preparation, live coding, video, coach communication and post-match feedback. Explicitly distinguishes deeper internal analysis from simpler player-facing communication.
+- **Cricket Ireland interview with analyst Scott Irvine:** https://cricketireland.ie/news/interview-scott-irvine-on-coding-balls-lords-and-thieving-monkeys/ — describes opponent preparation, match-up information, video/statistical support and review.
+- **Mumbai Indians scouting report (Indian Express, 2023):** https://indianexpress.com/article/sports/ipl/how-extensive-scouting-and-diligent-scouts-have-made-mumbai-indians-the-superstar-team-they-are-8629243/ — describes multi-season tracking, data plus human scouting, and assessing match readiness and crunch-game performance.
+
+## G. Refined reading order
+
+1. 2026 limited-overs systematic review — establish the field and known limitations.
+2. Davis et al. (2015) — role-based expected run differential.
+3. Modified Duckworth–Lewis player ratings (2023/2024) — state-dependent valuation and cross-discipline comparison.
+4. Mallawa Arachchi et al. (2024) — T20I chase pressure.
+5. Bandyopadhyay & Bhattacharjee (2026) — recent T20 pressure trajectories and Markov states.
+6. Mondal (2026) — Cricket Win Score and win-based validation.
+7. 2025 impact-ranking systematic review — compare ranking families.
+8. Chathurangi et al. (2026) — joint score contribution / ball utilization.
+9. RE24, WAR, xG and RAPM — transferable ideas, not formulas to import unchanged.
